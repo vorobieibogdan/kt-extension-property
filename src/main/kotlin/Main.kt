@@ -8,3 +8,7 @@ class Person(val name: String, val age: Int)
 val Person.isAdult: Boolean
     get() = age >= ADULT_AGE
 
+fun main() {
+    val person = Person("John Doe", 20)
+    println("${person.name} is adult: ${person.isAdult}")
+}
