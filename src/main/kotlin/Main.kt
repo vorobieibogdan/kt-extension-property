@@ -1,12 +1,12 @@
-package mate.academy
-
 private const val ADULT_AGE = 18
 
 // Please, do not modify this class!
-class Person(val name: String, val age: Int)
+class Person(
+    val name: String,
+    val age: Int
+)
 
 // Extension property
 val Person.isAdult: Boolean
-    get() = age >= ADULT_AGE
-
+    get() = this.age >= ADULT_AGE
 
